@@ -23,7 +23,9 @@ The repository contains the following files and folders
     - `sentwords_curves#{threshold}`: labeling the curves (for sentence--word--grapheme) according to their pattern (not reported in the paper). The default threshold is 50
 
 - analyze_means.rb: this script uses the contents of the `data_means` folder to run a higher-level analysis. Specify the threshold and the level of analysis (`sent`, `clause`, etc., see the legend above; the label must match the labels in the `data_means` folder). The script outputs two files: 
-    - results_means_#{level}_#{threshold}.tsv: results of Spearman correlation test for every language; range (the maximum value of the unit length) (Appendix A; Table 7)
-    - summary_means_#{level}_#{threshold}.tsv: how many languages (absolute value and relative value) can be labelled as "Menzerathian", "anti-Menzerathian" or "undefined" (Table 1; Section 6)
+    - `results_means_#{level}_#{threshold}.tsv`: results of Spearman correlation test for every language; range (the maximum value of the unit length) (Appendix A; Table 7)
+    - `summary_means_#{level}_#{threshold}.tsv`: how many languages (absolute value and relative value) can be labelled as "Menzerathian", "anti-Menzerathian" or "undefined" (Table 1; Section 6)
     
-- analyze_detailed.rb
+- analyze_detailed.rb: this script uses the contents of the `data_means` folder to reproduce the analysis described in Section 4.2 and outputs two files (    `clause_types.tsv` and `main_clause_types.tsv`), cf. Table 2.
+
+Output files provided by all the scripts are also included.
